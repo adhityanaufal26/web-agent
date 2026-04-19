@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Opal — Jasa setup AI Agent otomatis seperti OpenClaw, Hermes, Telegram Bot + VPS siap pakai. Konsultasi gratis, setup cepat, garansi sampai jalan.">
+    <meta name="keywords"
+        content="AI agent, setup AI, OpenClaw, Hermes, Telegram bot, VPS, automation, jasa AI Indonesia">
+    <title>Opal — Bangun AI Agent Otomatis Tanpa Ribet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <img src="logo.png" alt="Opal Logo" class="logo-image" width="40" height="40">
+                <span class="logo-text">Opal</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#keunggulan">Keunggulan</a></li>
+                <li><a href="#harga">Harga</a></li>
+                <li><a href="#vps">VPS</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+            </ul>
+            <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20ingin%20konsultasi%20AI%20Agent"
+                class="nav-cta" target="_blank" rel="noopener">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                    <path
+                        d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.616l4.573-1.46A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.587-5.932-1.61l-.425-.253-2.712.866.883-2.638-.278-.44A9.777 9.777 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z" />
+                </svg>
+                Hubungi Kami
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-effects">
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="hero-grid-overlay"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content" data-animate="fade-up">
+                <h1 class="hero-title">
+                    Bangun <span class="gradient-text">AI Agent</span> Otomatis Tanpa Ribet
+                </h1>
+                <p class="hero-subtitle">
+                    Kami bantu setup AI seperti <strong>OpenClaw</strong>, <strong>Hermes</strong>, <strong>Telegram
+                        Bot</strong>, dan <strong>CS Bot</strong> + VPS siap pakai. Fokus ke bisnis, biar AI yang
+                    bekerja untuk Anda.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20ingin%20konsultasi%20gratis%20AI%20Agent"
+                        class="btn btn-primary btn-lg" target="_blank" rel="noopener" id="hero-cta-konsultasi">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                        Konsultasi Gratis
+                    </a>
+                    <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20ingin%20order%20AI%20Agent"
+                        class="btn btn-secondary btn-lg" target="_blank" rel="noopener" id="hero-cta-order">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.616l4.573-1.46A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.587-5.932-1.61l-.425-.253-2.712.866.883-2.638-.278-.44A9.777 9.777 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z" />
+                        </svg>
+                        Order via WhatsApp
+                    </a>
+                </div>
+
+            </div>
+            <div class="hero-visual" data-animate="fade-left">
+                <div class="hero-image-wrapper">
+                    <img src="hero-illustration.png" alt="AI Agent Dashboard Opal" class="hero-image" width="600"
+                        height="500">
+                    <div class="hero-float-card card-1">
+                        <div class="float-icon">🤖</div>
+                        <div class="float-info">
+                            <span class="float-label">AI Agent</span>
+                            <span class="float-status online">Active</span>
+                        </div>
+                    </div>
+                    <div class="hero-float-card card-2">
+                        <div class="float-icon">⚡</div>
+                        <div class="float-info">
+                            <span class="float-label">Deploy Speed</span>
+                            <span class="float-value">&lt; 24 Jam</span>
+                        </div>
+                    </div>
+                    <div class="hero-float-card card-3">
+                        <div class="float-icon">🔒</div>
+                        <div class="float-info">
+                            <span class="float-label">VPS Uptime</span>
+                            <span class="float-value">99.9%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- TRUST INDICATORS -->
+    <section class="trust-section" id="trust">
+        <div class="container">
+            <div class="trust-grid" data-animate="fade-up">
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <div class="trust-content">
+                        <span class="trust-number">150+</span>
+                        <span class="trust-label">Client Sudah Terbantu</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12,6 12,12 16,14" />
+                        </svg>
+                    </div>
+                    <div class="trust-content">
+                        <span class="trust-number">24/7</span>
+                        <span class="trust-label">Support Responsif</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <div class="trust-content">
+                        <span class="trust-number">100%</span>
+                        <span class="trust-label">Garansi Sampai Jalan</span>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polygon
+                                points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+                        </svg>
+                    </div>
+                    <div class="trust-content">
+                        <span class="trust-number">4.9/5</span>
+                        <span class="trust-label">Rating Kepuasan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYANAN KAMI -->
+    <section class="services-section" id="layanan">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">Layanan Kami</span>
+                <h2 class="section-title">Solusi AI <span class="gradient-text">Lengkap</span> untuk Bisnis Anda</h2>
+                <p class="section-subtitle">Dari setup hingga deployment, kami handle semuanya. Anda tinggal fokus
+                    scaling bisnis.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🤖</div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3 class="service-title">Setup AI Agent</h3>
+                    <p class="service-desc">Setup lengkap AI agent seperti <strong>OpenClaw</strong> &
+                        <strong>Hermes</strong>. Siap pakai untuk automasi bisnis, customer service, dan lead
+                        generation.
+                    </p>
+                    <ul class="service-features">
+                        <li>Instalasi & konfigurasi penuh</li>
+                        <li>Training model sesuai kebutuhan</li>
+                        <li>Testing & optimasi performa</li>
+                    </ul>
+                    <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20tertarik%20Setup%20AI%20Agent"
+                        class="service-link" target="_blank" rel="noopener">
+                        Pelajari Selengkapnya
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">💬</div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3 class="service-title">Telegram Bot Automation</h3>
+                    <p class="service-desc">Bot Telegram pintar yang bisa handle order, support, notifikasi, dan
+                        automasi workflow bisnis Anda 24/7 tanpa jeda.</p>
+                    <ul class="service-features">
+                        <li>Auto-reply & chatbot cerdas</li>
+                        <li>Integrasi dengan API eksternal</li>
+                        <li>Dashboard monitoring real-time</li>
+                    </ul>
+                    <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20tertarik%20Telegram%20Bot%20Automation"
+                        class="service-link" target="_blank" rel="noopener">
+                        Pelajari Selengkapnya
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="300">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🖥️</div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3 class="service-title">Deployment ke VPS</h3>
+                    <p class="service-desc">Deploy AI agent Anda ke VPS yang sudah dioptimasi. Performa tinggi, uptime
+                        99.9%, dan siap scale kapan saja.</p>
+                    <ul class="service-features">
+                        <li>VPS sudah dikonfigurasi optimal</li>
+                        <li>SSL & security terpasang</li>
+                        <li>Auto-restart & monitoring</li>
+                    </ul>
+                    <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20tertarik%20Deployment%20VPS"
+                        class="service-link" target="_blank" rel="noopener">
+                        Pelajari Selengkapnya
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="400">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🎯</div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3 class="service-title">Custom AI Sesuai Kebutuhan</h3>
+                    <p class="service-desc">Butuh solusi AI yang spesifik? Kami buat custom agent sesuai workflow,
+                        niche, dan kebutuhan unik bisnis Anda.</p>
+                    <ul class="service-features">
+                        <li>Konsultasi mendalam</li>
+                        <li>Desain arsitektur custom</li>
+                        <li>Iterasi hingga sempurna</li>
+                    </ul>
+                    <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20tertarik%20Custom%20AI"
+                        class="service-link" target="_blank" rel="noopener">
+                        Pelajari Selengkapnya
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="500">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">💬</div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3 class="service-title">CS Bot WhatsApp — Auto Balas Chat</h3>
+                    <p class="service-desc">Bot customer service via <strong>WhatsApp</strong> yang bisa balas chat
+                        pelanggan secara otomatis 24/7. Tingkatkan kepuasan customer tanpa perlu nambah tim CS.</p>
+                    <ul class="service-features">
+                        <li>Auto-reply WhatsApp cerdas sesuai FAQ bisnis</li>
+                        <li>Terhubung langsung ke nomor WhatsApp bisnis</li>
+                        <li>Eskalasi otomatis ke human agent</li>
+                    </ul>
+                    <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20tertarik%20Setup%20CS%20Bot%20untuk%20balas%20chat%20customer"
+                        class="service-link" target="_blank" rel="noopener">
+                        Pelajari Selengkapnya
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section class="advantages-section" id="keunggulan">
+        <div class="container">
+            <div class="advantages-layout">
+                <div class="advantages-content" data-animate="fade-right">
+                    <span class="section-badge">Kenapa Pilih Opal?</span>
+                    <h2 class="section-title">Kami Beda dari yang Lain</h2>
+                    <p class="section-subtitle">Bukan cuma setup, kami pastikan AI agent Anda benar-benar jalan dan
+                        menghasilkan.</p>
+                    <div class="advantages-list">
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="13,2 3,14 12,14 11,22 21,10 12,10" />
+                                </svg>
+                            </div>
+                            <div class="advantage-info">
+                                <h4>Setup Cepat & Tanpa Drama</h4>
+                                <p>Proses setup cepat, biasanya selesai dalam 1-2 hari saja. Tidak perlu menunggu lama.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                </svg>
+                            </div>
+                            <div class="advantage-info">
+                                <h4>Cocok untuk Pemula</h4>
+                                <p>Tidak perlu skill teknis. Kami yang handle semuanya, Anda tinggal pakai.</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                </svg>
+                            </div>
+                            <div class="advantage-info">
+                                <h4>Free Konsultasi</h4>
+                                <p>Konsultasi gratis dulu sebelum order. Tidak ada paksaan, diskusi saja dulu.</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <div class="advantage-info">
+                                <h4>Support After Sales</h4>
+                                <p>Setelah setup selesai, kami tetap support jika ada kendala atau butuh bantuan.</p>
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="advantage-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                                    <line x1="8" y1="21" x2="16" y2="21" />
+                                    <line x1="12" y1="17" x2="12" y2="21" />
+                                </svg>
+                            </div>
+                            <div class="advantage-info">
+                                <h4>Harga Transparan</h4>
+                                <p>Tidak ada biaya tersembunyi. Harga sudah clear dari awal sebelum deal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages-visual" data-animate="fade-left">
+                    <div class="adv-visual-card">
+                        <div class="adv-terminal">
+                            <div class="terminal-header">
+                                <div class="terminal-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <span class="terminal-title">Opal-agent.sh</span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line">
+                                    <span class="t-prompt">$</span>
+                                    <span class="t-command">Opal deploy --agent openclaw</span>
+                                </div>
+                                <div class="terminal-line t-output">
+                                    <span class="t-success">✓</span> Connecting to VPS...
+                                </div>
+                                <div class="terminal-line t-output">
+                                    <span class="t-success">✓</span> Installing dependencies...
+                                </div>
+                                <div class="terminal-line t-output">
+                                    <span class="t-success">✓</span> Configuring AI model...
+                                </div>
+                                <div class="terminal-line t-output">
+                                    <span class="t-success">✓</span> Running health checks...
+                                </div>
+                                <div class="terminal-line t-output highlight">
+                                    <span class="t-success">🚀</span> Agent deployed successfully!
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="t-prompt">$</span>
+                                    <span class="t-cursor">|</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAKET HARGA -->
+    <section class="pricing-section" id="harga">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">Paket Harga</span>
+                <h2 class="section-title">Pilih Paket yang <span class="gradient-text">Cocok</span> untuk Anda</h2>
+                <p class="section-subtitle">Semua paket termasuk konsultasi gratis dan garansi sampai jalan. Tidak ada
+                    biaya tersembunyi.</p>
+            </div>
+            <div class="pricing-grid">
+                <!-- Basic -->
+                <div class="pricing-card" data-animate="fade-up" data-delay="100">
+                    <div class="pricing-header">
+                        <span class="pricing-tier">Basic</span>
+                        <div class="pricing-price">
+                            <span class="price-currency">Rp</span>
+                            <span class="price-amount">299K</span>
+                        </div>
+                        <span class="pricing-period">Mulai dari</span>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Setup 1 AI Agent
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Konfigurasi dasar
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Panduan penggunaan
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Support 3 hari
+                            </li>
+                            <li class="disabled">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18" />
+                                    <line x1="6" y1="6" x2="18" y2="18" />
+                                </svg>
+                                Tanpa VPS
+                            </li>
+                            <li class="disabled">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18" />
+                                    <line x1="6" y1="6" x2="18" y2="18" />
+                                </svg>
+                                Tanpa maintenance
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20ingin%20order%20Paket%20Basic"
+                            class="btn btn-outline btn-full" target="_blank" rel="noopener" id="pricing-basic">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+                <!-- Standard -->
+                <div class="pricing-card popular" data-animate="fade-up" data-delay="200">
+                    <div class="popular-badge">🔥 Paling Laris</div>
+                    <div class="pricing-header">
+                        <span class="pricing-tier">Standard</span>
+                        <div class="pricing-price">
+                            <span class="price-currency">Rp</span>
+                            <span class="price-amount">599K</span>
+                        </div>
+                        <span class="pricing-period">Mulai dari</span>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Setup AI Agent + VPS
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Free install & deploy
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                VPS sudah dioptimasi
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Support 7 hari
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                SSL & security setup
+                            </li>
+                            <li class="disabled">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18" />
+                                    <line x1="6" y1="6" x2="18" y2="18" />
+                                </svg>
+                                Tanpa maintenance
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20ingin%20order%20Paket%20Standard"
+                            class="btn btn-primary btn-full" target="_blank" rel="noopener" id="pricing-standard">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+                <!-- Premium -->
+                <div class="pricing-card" data-animate="fade-up" data-delay="300">
+                    <div class="pricing-header">
+                        <span class="pricing-tier">Premium</span>
+                        <div class="pricing-price">
+                            <span class="price-currency">Rp</span>
+                            <span class="price-amount">999K</span>
+                        </div>
+                        <span class="pricing-period">Mulai dari</span>
+                    </div>
+                    <div class="pricing-body">
+                        <ul class="pricing-features">
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Full setup + VPS premium
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Maintenance 30 hari
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Priority support
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Custom konfigurasi lanjutan
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Backup & monitoring
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Revisi tanpa batas
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20ingin%20order%20Paket%20Premium"
+                            class="btn btn-outline btn-full" target="_blank" rel="noopener" id="pricing-premium">
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYANAN VPS -->
+    <section class="vps-section" id="vps">
+        <div class="container">
+            <div class="vps-layout">
+                <div class="vps-visual" data-animate="fade-right">
+                    <img src="vps-illustration.png" alt="VPS Server Opal" class="vps-image" width="500" height="400">
+                </div>
+                <div class="vps-content" data-animate="fade-left">
+                    <span class="section-badge">Layanan VPS</span>
+                    <h2 class="section-title">VPS <span class="gradient-text">Siap Pakai</span> untuk AI Agent</h2>
+                    <p class="section-subtitle">VPS yang sudah dioptimasi khusus untuk menjalankan AI agent. Tinggal
+                        pakai, tanpa ribet konfigurasi.</p>
+                    <div class="vps-features">
+                        <div class="vps-feature">
+                            <div class="vps-feat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="8" rx="2" />
+                                    <rect x="2" y="14" width="20" height="8" rx="2" />
+                                    <line x1="6" y1="6" x2="6.01" y2="6" />
+                                    <line x1="6" y1="18" x2="6.01" y2="18" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>VPS Siap Pakai</h4>
+                                <p>Sudah terinstall semua yang dibutuhkan. Langsung run AI agent tanpa setup manual.</p>
+                            </div>
+                        </div>
+                        <div class="vps-feature">
+                            <div class="vps-feat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="13,2 3,14 12,14 11,22 21,10 12,10" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Langsung Run AI Agent</h4>
+                                <p>Bisa langsung deploy dan jalankan AI agent. Performa optimal, latency rendah.</p>
+                            </div>
+                        </div>
+                        <div class="vps-feature">
+                            <div class="vps-feat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Support Install & Troubleshooting</h4>
+                                <p>Ada kendala? Tim kami siap bantu install, troubleshoot, dan perbaiki masalah.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFIT USER -->
+    <section class="benefits-section" id="benefit">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">Keuntungan untuk Anda</span>
+                <h2 class="section-title">Kenapa Harus <span class="gradient-text">Mulai Sekarang</span>?</h2>
+                <p class="section-subtitle">Otomatisasi AI bukan lagi hal mahal. Mulai dari sekarang, rasakan
+                    manfaatnya.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-animate="fade-up" data-delay="100">
+                    <div class="benefit-number">01</div>
+                    <h4>Tidak Perlu Setup Manual</h4>
+                    <p>Anda tidak perlu pusing belajar terminal, coding, atau konfigurasi server. Kami yang handle.</p>
+                </div>
+                <div class="benefit-card" data-animate="fade-up" data-delay="150">
+                    <div class="benefit-number">02</div>
+                    <h4>Hemat Waktu Berjam-jam</h4>
+                    <p>Yang biasanya butuh berhari-hari untuk setup, kami selesaikan dalam hitungan jam.</p>
+                </div>
+                <div class="benefit-card" data-animate="fade-up" data-delay="200">
+                    <div class="benefit-number">03</div>
+                    <h4>Bisa Langsung Digunakan</h4>
+                    <p>Setelah setup selesai, AI agent Anda langsung siap bekerja. No drama, no delay.</p>
+                </div>
+                <div class="benefit-card" data-animate="fade-up" data-delay="250">
+                    <div class="benefit-number">04</div>
+                    <h4>Automation 24 Jam Non-Stop</h4>
+                    <p>AI agent Anda bekerja tanpa henti, bahkan saat Anda tidur. Revenue terus jalan.</p>
+                </div>
+                <div class="benefit-card" data-animate="fade-up" data-delay="300">
+                    <div class="benefit-number">05</div>
+                    <h4>Cocok untuk Bisnis & Side Income</h4>
+                    <p>Baik untuk bisnis utama maupun side income. AI membantu Anda scale tanpa tambah karyawan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI -->
+    <section class="testimonials-section" id="testimoni">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-badge">Testimoni</span>
+                <h2 class="section-title">Apa Kata <span class="gradient-text">Mereka</span>?</h2>
+                <p class="section-subtitle">Client kami sudah membuktikan. Sekarang giliran Anda.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate="fade-up" data-delay="100">
+                    <div class="testimonial-stars">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-text">"Awalnya ragu, tapi setelah AI agent-nya jalan, orderan masuk otomatis
+                        via Telegram. Setup-nya cepat banget, tim Opal sangat helpful dan sabar ngejelasin."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RA</div>
+                        <div class="author-info">
+                            <span class="author-name">Rizky Aditya</span>
+                            <span class="author-role">Affiliate Marketer, Jakarta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate="fade-up" data-delay="200">
+                    <div class="testimonial-stars">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-text">"Saya gaptek soal server dan AI, tapi Opal handle semuanya. Sekarang bot
+                        Telegram saya bisa auto-reply dan proses order 24 jam. Game changer banget!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SP</div>
+                        <div class="author-info">
+                            <span class="author-name">Sinta Putri</span>
+                            <span class="author-role">Online Shop Owner, Surabaya</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-animate="fade-up" data-delay="300">
+                    <div class="testimonial-stars">
+                        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                    </div>
+                    <p class="testimonial-text">"VPS dari Opal stabil banget, uptime always 99.9%. Yang bikin beda
+                        adalah support after sales-nya, responsive dan solutif. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">BW</div>
+                        <div class="author-info">
+                            <span class="author-name">Budi Wicaksono</span>
+                            <span class="author-role">Full-Stack Developer, Bandung</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-section" id="cta-final">
+        <div class="cta-bg-effects">
+            <div class="cta-glow cta-glow-1"></div>
+            <div class="cta-glow cta-glow-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-animate="fade-up">
+                <h2 class="cta-title">Mulai Sekarang,<br>Bangun <span class="gradient-text">AI Agent</span> Anda</h2>
+                <p class="cta-subtitle">Jangan tunda lagi. Kompetitor Anda sudah mulai pakai AI.<br>Konsultasi gratis,
+                    tanpa komitmen.</p>
+                <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20ingin%20mulai%20setup%20AI%20Agent"
+                    class="btn btn-primary btn-xl" target="_blank" rel="noopener" id="cta-final-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.616l4.573-1.46A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.587-5.932-1.61l-.425-.253-2.712.866.883-2.638-.278-.44A9.777 9.777 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z" />
+                    </svg>
+                    Chat WhatsApp Sekarang
+                </a>
+                <p class="cta-note">💬 Respon cepat • 🔒 Data aman • ✅ Tanpa komitmen</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo footer-logo">
+                        <img src="logo.png" alt="Opal Logo" class="logo-image" width="40" height="40">
+                        <span class="logo-text">Opal</span>
+                    </a>
+                    <p class="footer-desc">Solusi AI agent & VPS terpercaya di Indonesia. Setup cepat, garansi jalan,
+                        support 24/7.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <circle cx="12" cy="12" r="5" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="TikTok" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48v-7.13a8.16 8.16 0 004.77 1.53v-3.44a4.85 4.85 0 01-.19-.04v.09z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="#layanan">Layanan</a></li>
+                        <li><a href="#keunggulan">Keunggulan</a></li>
+                        <li><a href="#harga">Harga</a></li>
+                        <li><a href="#vps">VPS</a></li>
+                        <li><a href="#testimoni">Testimoni</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#layanan">Setup AI Agent</a></li>
+                        <li><a href="#layanan">Telegram Bot</a></li>
+                        <li><a href="#vps">VPS Hosting</a></li>
+                        <li><a href="#layanan">Custom AI</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li><a href="https://wa.me/6285669130605" target="_blank" rel="noopener">WhatsApp</a></li>
+                        <li><a href="mailto:hello@Opal.id">hello@Opal.id</a></li>
+                        <li><a href="#">@Opal.ai</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Opal. All rights reserved.</p>
+                <p>Made with ⚡ for AI enthusiasts.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20ingin%20tanya%20tentang%20AI%20Agent"
+        class="floating-wa" target="_blank" rel="noopener" id="floating-whatsapp" aria-label="Chat WhatsApp">
+        <div class="wa-pulse"></div>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            <path
+                d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.616l4.573-1.46A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818c-2.168 0-4.19-.587-5.932-1.61l-.425-.253-2.712.866.883-2.638-.278-.44A9.777 9.777 0 012.182 12c0-5.423 4.395-9.818 9.818-9.818S21.818 6.577 21.818 12s-4.395 9.818-9.818 9.818z" />
+        </svg>
+        <span class="wa-tooltip">Chat Kami</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
