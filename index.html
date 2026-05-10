@@ -11,7 +11,7 @@
     <title>Opal — Bangun AI Agent Otomatis Tanpa Ribet</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,600;1,9..144,700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/png" href="logo.png">
@@ -57,6 +57,10 @@
         </div>
         <div class="container hero-container">
             <div class="hero-content" data-animate="fade-up">
+                <div class="hero-eyebrow" aria-hidden="true">
+                    <span class="eyebrow-mark"></span>
+                    <span class="eyebrow-text">Opal Studio · est. 2026 · Indonesia</span>
+                </div>
                 <h1 class="hero-title">
                     Bangun <span class="gradient-text">AI Agent</span> Otomatis Tanpa Ribet
                 </h1>
@@ -92,21 +96,41 @@
                     <img src="hero-illustration.png" alt="AI Agent Dashboard Opal" class="hero-image" width="600"
                         height="500">
                     <div class="hero-float-card card-1">
-                        <div class="float-icon">🤖</div>
+                        <div class="float-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="4" y="7" width="16" height="12" rx="3" />
+                                <path d="M12 3v4" />
+                                <circle cx="9" cy="13" r="1" fill="currentColor" />
+                                <circle cx="15" cy="13" r="1" fill="currentColor" />
+                                <path d="M9 17h6" />
+                            </svg>
+                        </div>
                         <div class="float-info">
                             <span class="float-label">AI Agent</span>
                             <span class="float-status online">Active</span>
                         </div>
                     </div>
                     <div class="hero-float-card card-2">
-                        <div class="float-icon">⚡</div>
+                        <div class="float-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z" />
+                            </svg>
+                        </div>
                         <div class="float-info">
                             <span class="float-label">Deploy Speed</span>
                             <span class="float-value">&lt; 24 Jam</span>
                         </div>
                     </div>
                     <div class="hero-float-card card-3">
-                        <div class="float-icon">🔒</div>
+                        <div class="float-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="4" y="10" width="16" height="11" rx="2" />
+                                <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                            </svg>
+                        </div>
                         <div class="float-info">
                             <span class="float-label">VPS Uptime</span>
                             <span class="float-value">99.9%</span>
@@ -115,7 +139,7 @@
                 </div>
             </div>
         </div>
-        <div class="hero-scroll-indicator">
+        <div class="hero-scroll-indicator" aria-hidden="true">
             <span>Scroll</span>
             <div class="scroll-line"></div>
         </div>
@@ -167,8 +191,20 @@
             </div>
             <div class="services-grid">
                 <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <span class="service-index">01</span>
                     <div class="service-icon-wrapper">
-                        <div class="service-icon">🤖</div>
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="7" width="18" height="13" rx="3" />
+                                <path d="M12 3v4" />
+                                <circle cx="12" cy="3" r="1" fill="currentColor" />
+                                <circle cx="9" cy="13" r="1.3" fill="currentColor" />
+                                <circle cx="15" cy="13" r="1.3" fill="currentColor" />
+                                <path d="M9 17h6" />
+                                <path d="M2 13h1M21 13h1" />
+                            </svg>
+                        </div>
                         <div class="service-icon-bg"></div>
                     </div>
                     <h3 class="service-title">Setup AI Agent</h3>
@@ -196,8 +232,15 @@
 
 
                 <div class="service-card" data-animate="fade-up" data-delay="500">
+                    <span class="service-index">02</span>
                     <div class="service-icon-wrapper">
-                        <div class="service-icon">💬</div>
+                        <div class="service-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 5h16v11H8l-4 4V5z" />
+                                <path d="M8 10h8M8 13h5" />
+                            </svg>
+                        </div>
                         <div class="service-icon-bg"></div>
                     </div>
                     <h3 class="service-title">CS Bot WhatsApp — Auto Balas Chat</h3>
@@ -426,7 +469,7 @@
 
                 <!-- Pro -->
                 <div class="pricing-card popular" data-animate="fade-up" data-delay="150">
-                    <div class="popular-badge">🔥 Paling Laris</div>
+                    <div class="popular-badge"><span class="popular-badge-dash"></span>Paling Laris<span class="popular-badge-dash"></span></div>
                     <div class="pricing-header">
                         <span class="pricing-tier">Pro</span>
                         <div class="pricing-price">
