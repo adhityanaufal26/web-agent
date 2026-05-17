@@ -150,6 +150,52 @@ document.addEventListener('DOMContentLoaded', () => {
         showWa();
     }
 
+    // === CURRENCY TOGGLE (IDR / USD) ===
+    const currencyButtons = document.querySelectorAll('.currency-btn');
+    const priceBlocks = document.querySelectorAll('.pricing-price');
+    const originalPriceBlocks = document.querySelectorAll('.price-original-line');
+
+    const updatePrices = (currency) => {
+        priceBlocks.forEach(block => {
+            const currencySymbol = block.getAttribute(`data-${currency}-currency`);
+            const amount = block.getAttribute(`data-${currency}-amount`);
+            const period = block.getAttribute(`data-${currency}-period`);
+            if (!currencySymbol || !amount) return;
+
+            const currencyEl = block.querySelector('.price-currency');
+            const amountEl = block.querySelector('.price-amount');
+            const periodEl = block.querySelector('.price-period');
+            if (currencyEl) currencyEl.textContent = currencySymbol;
+            if (amountEl) amountEl.textContent = amount;
+            if (periodEl && period) periodEl.textContent = period;
+        });
+
+        originalPriceBlocks.forEach(block => {
+            const currencySymbol = block.getAttribute(`data-${currency}-currency`);
+            const original = block.getAttribute(`data-${currency}-original`);
+            const period = block.getAttribute(`data-${currency}-period`);
+            if (!currencySymbol || !original) return;
+
+            const currencyEl = block.querySelector('.price-original-currency');
+            const amountEl = block.querySelector('.price-original');
+            const periodEl = block.querySelector('.price-original-period');
+            if (currencyEl) currencyEl.textContent = currencySymbol;
+            if (amountEl) amountEl.textContent = original;
+            if (periodEl && period) periodEl.textContent = period;
+        });
+    };
+
+    currencyButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const currency = btn.getAttribute('data-currency');
+            currencyButtons.forEach(b => {
+                b.classList.toggle('active', b === btn);
+                b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+            });
+            updatePrices(currency);
+        });
+    });
+
     // === BUTTON CURSOR GLOW ===
     // tracks mouse position inside each button so the radial highlight follows
     // the cursor. replaces the previous full-viewport parallax which felt gimmicky.

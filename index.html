@@ -55,14 +55,25 @@
             <div class="hero-glow hero-glow-2"></div>
             <div class="hero-grid-overlay"></div>
         </div>
-        <div class="container hero-container">
+        <div class="container hero-container hero-centered">
             <div class="hero-content" data-animate="fade-up">
                 <div class="hero-eyebrow" aria-hidden="true">
                     <span class="eyebrow-mark"></span>
-                    <span class="eyebrow-text">Opal Studio · est. 2026 · Indonesia</span>
+                    <span class="eyebrow-text">Opal · est. 2026 · Indonesia</span>
                 </div>
                 <h1 class="hero-title">
-                    Bangun <span class="gradient-text">AI Agent</span> Otomatis Tanpa Ribet
+                    Bangun
+                    <span class="word-reel" aria-hidden="true">
+                        <span class="word-reel-track">
+                            <span class="word-reel-item">AI Agent</span>
+                            <span class="word-reel-item">CS Bot WA</span>
+                            <span class="word-reel-item">Telegram Bot</span>
+                            <span class="word-reel-item">Karyawan AI</span>
+                            <span class="word-reel-item">AI Agent</span>
+                        </span>
+                    </span>
+                    <span class="visually-hidden">AI Agent, CS Bot WhatsApp, Telegram Bot, Karyawan AI</span>
+                    <br>Otomatis Tanpa Ribet
                 </h1>
                 <p class="hero-subtitle">
                     Kami bantu setup AI seperti <strong>OpenClaw</strong>, <strong>Hermes</strong>, <strong>Telegram
@@ -89,52 +100,20 @@
                         Order via WhatsApp
                     </a>
                 </div>
-
-            </div>
-            <div class="hero-visual" data-animate="fade-left">
-                <div class="hero-image-wrapper">
-                    <img src="hero-illustration.png" alt="AI Agent Dashboard Opal" class="hero-image" width="600"
-                        height="500">
-                    <div class="hero-float-card card-1">
-                        <div class="float-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <rect x="4" y="7" width="16" height="12" rx="3" />
-                                <path d="M12 3v4" />
-                                <circle cx="9" cy="13" r="1" fill="currentColor" />
-                                <circle cx="15" cy="13" r="1" fill="currentColor" />
-                                <path d="M9 17h6" />
-                            </svg>
-                        </div>
-                        <div class="float-info">
-                            <span class="float-label">AI Agent</span>
-                            <span class="float-status online">Active</span>
-                        </div>
-                    </div>
-                    <div class="hero-float-card card-2">
-                        <div class="float-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z" />
-                            </svg>
-                        </div>
-                        <div class="float-info">
-                            <span class="float-label">Deploy Speed</span>
-                            <span class="float-value">&lt; 24 Jam</span>
-                        </div>
-                    </div>
-                    <div class="hero-float-card card-3">
-                        <div class="float-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <rect x="4" y="10" width="16" height="11" rx="2" />
-                                <path d="M8 10V7a4 4 0 0 1 8 0v3" />
-                            </svg>
-                        </div>
-                        <div class="float-info">
-                            <span class="float-label">VPS Uptime</span>
-                            <span class="float-value">99.9%</span>
-                        </div>
+                <div class="hero-marquee" aria-hidden="true">
+                    <div class="marquee-track">
+                        <span>OpenClaw</span><span class="marquee-dot"></span>
+                        <span>Hermes</span><span class="marquee-dot"></span>
+                        <span>WhatsApp Bot</span><span class="marquee-dot"></span>
+                        <span>Telegram Bot</span><span class="marquee-dot"></span>
+                        <span>Private VPS</span><span class="marquee-dot"></span>
+                        <span>Custom Skill</span><span class="marquee-dot"></span>
+                        <span>OpenClaw</span><span class="marquee-dot"></span>
+                        <span>Hermes</span><span class="marquee-dot"></span>
+                        <span>WhatsApp Bot</span><span class="marquee-dot"></span>
+                        <span>Telegram Bot</span><span class="marquee-dot"></span>
+                        <span>Private VPS</span><span class="marquee-dot"></span>
+                        <span>Custom Skill</span><span class="marquee-dot"></span>
                     </div>
                 </div>
             </div>
@@ -390,15 +369,35 @@
                 <h2 class="section-title">Pilih Paket yang <span class="gradient-text">Cocok</span> untuk Anda</h2>
                 <p class="section-subtitle">Semua paket termasuk konsultasi gratis dan garansi sampai jalan. Tidak ada
                     biaya tersembunyi.</p>
+                <div class="currency-toggle" role="tablist" aria-label="Pilih mata uang">
+                    <button type="button" class="currency-btn active" data-currency="idr" role="tab" aria-selected="true">IDR</button>
+                    <button type="button" class="currency-btn" data-currency="usd" role="tab" aria-selected="false">USD</button>
+                </div>
             </div>
             <div class="pricing-grid">
-                <!-- Basic -->
-                <div class="pricing-card" data-animate="fade-up" data-delay="100">
+                <!-- Starter -->
+                <div class="pricing-card has-discount" data-animate="fade-up" data-delay="100">
+                    <div class="discount-banner">
+                        <span class="discount-banner-dash"></span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M20 12V8H6a2 2 0 1 1 0-4h12.5a1.5 1.5 0 1 1 0 3H6" />
+                            <path d="M4 18h16M4 6v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+                        </svg>
+                        Promo Spesial · Hemat 34%
+                        <span class="discount-banner-dash"></span>
+                    </div>
                     <div class="pricing-header">
-                        <span class="pricing-tier">Basic</span>
-                        <div class="pricing-price">
+                        <div class="pricing-tier-row">
+                            <span class="pricing-tier">Starter</span>
+                        </div>
+                        <div class="price-original-line" data-idr-currency="Rp" data-idr-original="89K" data-idr-period="/bln" data-usd-currency="$" data-usd-original="5.5" data-usd-period="/mo">
+                            <span class="price-original-currency">Rp</span>
+                            <span class="price-original">89K</span>
+                            <span class="price-original-period">/bln</span>
+                        </div>
+                        <div class="pricing-price" data-idr-currency="Rp" data-idr-amount="59K" data-idr-period="/bln" data-usd-currency="$" data-usd-amount="3.6" data-usd-period="/mo">
                             <span class="price-currency">Rp</span>
-                            <span class="price-amount">59K</span><span
+                            <span class="price-amount">59K</span><span class="price-period"
                                 style="font-size: 0.9rem; font-weight: normal; color: #a1a1aa; margin-left: 4px;">/bln</span>
                         </div>
                     </div>
@@ -409,21 +408,28 @@
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                Setup 1 AI Agent
+                                Setup AI Agent
+                            </li>
+                            <li title="DeepSeek V4 Flash · Qwen3.5 35B A3B · Qwen3.6 35B A3B · Llama 3.3 70B Instruct · MiniMax M2.5 · Kimi K2.6">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Model AI High End (6 Model)
                             </li>
                             <li>
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                Free VPS (2vCPU, 2GB RAM, 60GB ROM)
+                                Private VPS Full Akses (2vCPU · 2GB RAM · 40GB)
                             </li>
                             <li>
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                Model AI High End
+                                Panduan Penggunaan
                             </li>
                             <li class="disabled">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -431,7 +437,7 @@
                                     <line x1="18" y1="6" x2="6" y2="18" />
                                     <line x1="6" y1="6" x2="18" y2="18" />
                                 </svg>
-                                Setup Customer Service WA
+                                Custom Skill Agent
                             </li>
                             <li class="disabled">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -439,15 +445,7 @@
                                     <line x1="18" y1="6" x2="6" y2="18" />
                                     <line x1="6" y1="6" x2="18" y2="18" />
                                 </svg>
-                                Konfigurasi Email & Channel Lain
-                            </li>
-                            <li class="disabled">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <line x1="18" y1="6" x2="6" y2="18" />
-                                    <line x1="6" y1="6" x2="18" y2="18" />
-                                </svg>
-                                Instalasi Skill Lainnya
+                                Free Konsultasi
                             </li>
                             <li class="disabled">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -457,10 +455,18 @@
                                 </svg>
                                 Priority Maintenance
                             </li>
+                            <li class="disabled">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18" />
+                                    <line x1="6" y1="6" x2="18" y2="18" />
+                                </svg>
+                                Private WA Grup
+                            </li>
                         </ul>
                     </div>
                     <div class="pricing-footer">
-                        <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20ingin%20order%20Paket%20Basic"
+                        <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20ingin%20order%20Paket%20Starter"
                             class="btn btn-outline btn-full" target="_blank" rel="noopener">
                             Pesan Sekarang
                         </a>
@@ -468,13 +474,12 @@
                 </div>
 
                 <!-- Pro -->
-                <div class="pricing-card popular" data-animate="fade-up" data-delay="150">
-                    <div class="popular-badge"><span class="popular-badge-dash"></span>Paling Laris<span class="popular-badge-dash"></span></div>
+                <div class="pricing-card" data-animate="fade-up" data-delay="150">
                     <div class="pricing-header">
                         <span class="pricing-tier">Pro</span>
-                        <div class="pricing-price">
+                        <div class="pricing-price" data-idr-currency="Rp" data-idr-amount="149K" data-idr-period="/bln" data-usd-currency="$" data-usd-amount="9.2" data-usd-period="/mo">
                             <span class="price-currency">Rp</span>
-                            <span class="price-amount">99K</span><span
+                            <span class="price-amount">149K</span><span class="price-period"
                                 style="font-size: 0.9rem; font-weight: normal; color: #a1a1aa; margin-left: 4px;">/bln</span>
                         </div>
                     </div>
@@ -485,43 +490,42 @@
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                Setup 1 AI Agent
+                                Setup AI Agent
+                            </li>
+                            <li title="DeepSeek V4 Flash · Qwen3.5 35B A3B · Qwen3.6 35B A3B · Llama 3.3 70B Instruct · MiniMax M2.5 · Kimi K2.6">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Model AI High End (6 Model)
                             </li>
                             <li>
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                Free VPS (2vCPU, 2GB RAM, 60GB ROM)
+                                Private VPS Full Akses (2vCPU · 2GB RAM · 40GB)
                             </li>
                             <li>
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                Model AI High End
+                                Panduan Penggunaan
                             </li>
                             <li>
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                Setup Customer Service WA
+                                Custom Skill Agent
                             </li>
                             <li>
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                Konfigurasi Email & Channel Lain
-                            </li>
-                            <li class="disabled">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <line x1="18" y1="6" x2="6" y2="18" />
-                                    <line x1="6" y1="6" x2="18" y2="18" />
-                                </svg>
-                                Instalasi Skill Lainnya
+                                Free Konsultasi
                             </li>
                             <li class="disabled">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -530,24 +534,32 @@
                                     <line x1="6" y1="6" x2="18" y2="18" />
                                 </svg>
                                 Priority Maintenance
+                            </li>
+                            <li class="disabled">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="18" y1="6" x2="6" y2="18" />
+                                    <line x1="6" y1="6" x2="18" y2="18" />
+                                </svg>
+                                Private WA Grup
                             </li>
                         </ul>
                     </div>
                     <div class="pricing-footer">
                         <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20ingin%20order%20Paket%20Pro"
-                            class="btn btn-primary btn-full" target="_blank" rel="noopener">
+                            class="btn btn-outline btn-full" target="_blank" rel="noopener">
                             Pesan Sekarang
                         </a>
                     </div>
                 </div>
 
-                <!-- Ultra -->
+                <!-- Enterprise -->
                 <div class="pricing-card" data-animate="fade-up" data-delay="200">
                     <div class="pricing-header">
-                        <span class="pricing-tier">Ultra</span>
-                        <div class="pricing-price">
+                        <span class="pricing-tier">Enterprise</span>
+                        <div class="pricing-price" data-idr-currency="Rp" data-idr-amount="299K" data-idr-period="/bln" data-usd-currency="$" data-usd-amount="18.7" data-usd-period="/mo">
                             <span class="price-currency">Rp</span>
-                            <span class="price-amount">189K</span><span
+                            <span class="price-amount">299K</span><span class="price-period"
                                 style="font-size: 0.9rem; font-weight: normal; color: #a1a1aa; margin-left: 4px;">/bln</span>
                         </div>
                     </div>
@@ -558,42 +570,42 @@
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                Setup 1 AI Agent
+                                Setup AI Agent
+                            </li>
+                            <li title="Claude Opus 4.7 · Claude Sonnet 4.5 · GPT 5.5 · GPT 5.4 · Xiaomi MiMo v2 Pro · DeepSeek V4 Flash · Qwen3.5/3.6 35B A3B · Llama 3.3 70B · MiniMax M2.5 · Kimi K2.6">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <polyline points="20,6 9,17 4,12" />
+                                </svg>
+                                Model AI Premium (Claude · GPT-5 · MiMo + High End)
                             </li>
                             <li>
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                Free VPS (2vCPU, 2GB RAM, 60GB ROM)
+                                Private VPS Full Akses (2vCPU · 2GB RAM · 50GB)
                             </li>
                             <li>
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                Model AI Premium
+                                Panduan Penggunaan
                             </li>
                             <li>
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                Setup Customer Service WA
+                                Custom Skill Agent
                             </li>
                             <li>
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                Konfigurasi Email & Channel Lain
-                            </li>
-                            <li>
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2.5">
-                                    <polyline points="20,6 9,17 4,12" />
-                                </svg>
-                                Instalasi Skill Lainnya
+                                Free Konsultasi
                             </li>
                             <li>
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -607,13 +619,12 @@
                                     stroke-width="2.5">
                                     <polyline points="20,6 9,17 4,12" />
                                 </svg>
-                                <span style="color: #ffb86c; font-weight: 600;">Bonus:</span> +1 Agent & +1 VPS (Order ≥
-                                6 bulan)
+                                Private WA Grup
                             </li>
                         </ul>
                     </div>
                     <div class="pricing-footer">
-                        <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20ingin%20order%20Paket%20Ultra"
+                        <a href="https://wa.me/6285669130605?text=Halo%20Opal,%20saya%20ingin%20order%20Paket%20Enterprise"
                             class="btn btn-outline btn-full" target="_blank" rel="noopener">
                             Pesan Sekarang
                         </a>
@@ -712,7 +723,7 @@
                                 <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
                             </svg>
                         </a>
-                        <a href="#" class="social-link" aria-label="TikTok" target="_blank" rel="noopener">
+                        <a href="https://www.tiktok.com/@opalagent.ai" class="social-link" aria-label="TikTok" target="_blank" rel="noopener">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                 <path
                                     d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.48v-7.13a8.16 8.16 0 004.77 1.53v-3.44a4.85 4.85 0 01-.19-.04v.09z" />
