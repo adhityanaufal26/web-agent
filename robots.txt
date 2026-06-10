@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://opalagent.my.id/sitemap.xml
