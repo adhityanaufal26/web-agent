@@ -23,38 +23,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.getElementById('navLinks');
 
     if (navToggle && navLinks) {
+        const closeNav = () => {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('open');
+            document.body.style.overflow = '';
+        };
+
         navToggle.addEventListener('click', () => {
             navToggle.classList.toggle('active');
             navLinks.classList.toggle('open');
             document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
         });
 
+        // Close nav when clicking backdrop overlay (::before pseudo-element area)
+        navLinks.addEventListener('click', (e) => {
+            if (e.target === navLinks) closeNav();
+        });
+
         navLinks.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navToggle.classList.remove('active');
-                navLinks.classList.remove('open');
-                document.body.style.overflow = '';
-            });
+            link.addEventListener('click', () => closeNav());
         });
     }
 
     // === SCROLL ANIMATIONS (Intersection Observer) ===
     const animatedElements = document.querySelectorAll('[data-animate]');
+    const isMobile = window.innerWidth < 768;
 
     const animationObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const delay = entry.target.getAttribute('data-delay') || 0;
+                // On mobile, reduce delays so content appears faster
+                const adjustedDelay = isMobile ? Math.min(parseInt(delay), 150) : parseInt(delay);
                 setTimeout(() => {
                     entry.target.classList.add('visible');
-                }, parseInt(delay));
+                }, adjustedDelay);
                 animationObserver.unobserve(entry.target);
             }
         });
     }, {
         root: null,
-        rootMargin: '0px 0px -80px 0px',
-        threshold: 0.1
+        rootMargin: isMobile ? '0px 0px -40px 0px' : '0px 0px -80px 0px',
+        threshold: isMobile ? 0.05 : 0.1
     });
 
     animatedElements.forEach(el => animationObserver.observe(el));
