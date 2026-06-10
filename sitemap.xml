@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Indonesian -->
     <url>
         <loc>https://opalagent.my.id/</loc>
         <lastmod>2026-06-10</lastmod>
@@ -32,6 +33,37 @@
     </url>
     <url>
         <loc>https://opalagent.my.id/blog/kenapa-bisnis-butuh-ai-agent-2026.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- English -->
+    <url>
+        <loc>https://opalagent.my.id/en/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://opalagent.my.id/en/blog/</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://opalagent.my.id/en/blog/how-to-setup-ai-agent-for-business.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://opalagent.my.id/en/blog/whatsapp-chatbot-for-small-business.html</loc>
+        <lastmod>2026-06-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://opalagent.my.id/en/blog/why-businesses-need-ai-agents-2026.html</loc>
         <lastmod>2026-06-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
